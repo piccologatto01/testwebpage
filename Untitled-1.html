@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>My first page</title>
+  </head>
+  <body>
+    <h1>...</h1>    
+    <h3>2. Напишите программу, в которой из строки "I have 3 cats, 4 dogs, and 1 turtle" отбираются цифры. Из этих цифр формируется массив.
+        // Объект для получения строки с консоли
+        Scanner scan = new Scanner(System.in);
+        // Список для хранения цифр
+        List<Integer> arrayDigits = new ArrayList<>();
+        // Получение строки с консоли
+        String inputString = scan.nextLine();
+        
+        
+        // Проход по каждому символу строки
+        for (char c : inputString.toCharArray()) {
+           // Проверяем, является ли символ цифрой
+           if (Character.isDigit(c)) {
+               // Преобразуем символ в число и добавляем в список
+               arrayDigits.add(Character.getNumericValue(c));
+           }
+        }
+        // Вывод результата
+        System.out.println("Найденные цифры: " + arrayDigits);
+        </h3>   
+  </body>
+</html>
